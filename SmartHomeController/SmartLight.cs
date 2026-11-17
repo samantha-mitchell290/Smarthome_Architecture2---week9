@@ -42,19 +42,22 @@ namespace SmartHomeController
         }
 
         // Methods
-        public void SetBrightness()
+        public void SetBrightness(double brightness)
         {
-
+            this.Brightness = brightness;
+            Console.WriteLine($"Brightness now set to {Brightness}");
         }
 
-        public void SetColour()
+        public void SetColour(string colour)
         {
-
+            this.Colour= colour;
+            Console.WriteLine($"Colour now set to {Colour}");
         }
 
         public override void GetStatus()
         {
-
+            base.GetStatus();
+            Console.WriteLine($"Brightness: {Brightness}%, Colour: {Colour}");
         }
 
     }
