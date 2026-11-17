@@ -56,5 +56,10 @@ namespace SmartHomeController
 
         }
 
+        public override void GetStatus()
+        {
+            
+        }
+
     }
 }
